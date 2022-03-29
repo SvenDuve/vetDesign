@@ -1,6 +1,7 @@
 import _ from 'lodash';
 // import './styles/style.scss'
 import img from './books-768426_1920.jpg';
+import cardImg from './auge_cloe.jpg';
 import img2 from './finanzamt.jpg';
 import compList from './comp.json';
 import simpleParallax from 'simple-parallax-js';
@@ -30,6 +31,14 @@ function addPicture() {
 
 };
 
+
+function accToCard() {
+    const myImg = new Image(100,100);
+    myImg.src = cardImg;
+    myImg.className = 'cardImage';
+
+    
+}
 
 
 // function contentOnMouseEnter(compList) {
@@ -277,7 +286,7 @@ $('#btnInf').click(()=>{
 })
 
 // load
-cookieConsent();
+// cookieConsent();
 
 
 // for demo / testing only
