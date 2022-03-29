@@ -1,5 +1,5 @@
 {
-  "name": "dlc",
+  "name": "vetDesign",
   "version": "1.0.0",
   "description": "",
   "private": true,
@@ -11,16 +11,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SvenDuve/dlc.git"
+    "url": "git+https://github.com/SvenDuve/vetDesign.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/SvenDuve/dlc/issues"
+    "url": "https://github.com/SvenDuve/vetDesign/issues"
   },
-  "homepage": "https://github.com/SvenDuve/dlc#readme",
+  "homepage": "https://github.com/SvenDuve/vetDesign#readme",
   "dependencies": {
+    "@popperjs/core": "^2.11.4",
+    "bootstrap": "^5.1.3",
     "cookiebar": "^1.0.0",
     "expose-loader": "^2.0.0",
     "node": "^15.0.1",

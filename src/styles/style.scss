@@ -1,0 +1,413 @@
+$light:#EAE7DC;
+$light-middle:#D8C3A5;
+$middle: #8E8D8A;
+$light-red: #E98074;
+$dark-red: #E85A4F;
+$quicksan: 'Quicksand', sans-serif;
+$raleway: 'Raleway', sans-serif;
+$headsize: 35px;
+$paSize: 20px;
+
+
+.fixed-bottom {
+  width: auto;
+  position: sticky;
+  bottom: 30px;
+  padding: 22px;
+}
+
+.toast-body {
+  background-color: $dark-red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: $quicksan;
+  padding: 20px;
+}
+
+
+
+.headings {
+  font-size: $headsize;
+  font-family: $raleway;
+  color: $middle;
+  padding: 15px;
+}
+
+
+.headingsSmall {
+  font-size: 22px;
+}
+
+.smaller {
+  font-size: 18px;
+}
+
+.marginLeft {
+  margin-left: 25px;
+}
+
+.moreLeft {
+  margin-left: 75px;
+}
+
+.textForm {
+  font-size: $paSize;
+  font-family: $quicksan;
+  color: $middle;
+  padding: 15px;
+}
+
+.paddingBottom {
+  padding-bottom: 100px;
+}
+
+body {
+  background-color: $light;
+}
+
+
+.header{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  // justify-content: flex-end;
+  // border: 1px solid black;
+  background-color: $light;
+  color: $middle;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 5;
+}
+
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  align-self: flex-end;
+  justify-content: center;
+}
+
+
+#compName {
+  font-size: $headsize;
+  font-family: $raleway;
+  padding: 20px;
+  align-content: flex-start;
+
+}
+
+.mainitem {
+  width: 150px;
+  // margin: 5px;
+  padding: 20px;
+  font-size: $headsize;
+  background-color: $light;
+  font-family: $raleway;
+  transition: {
+    property: background-color;
+    duration: 1s;
+  }
+
+  &:hover {
+    background-color: $light-middle;
+    color: black;
+  }
+
+}
+
+
+
+
+
+.content{
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: minmax(700px, auto);
+  justify-content: center;  /* zentriert im container entlang der achse */
+  align-self: center;
+  // border: 1px solid green;
+  /* display: flex;
+  flex-direction: column; */
+}
+
+
+
+
+.contentGreeting{
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  // width: 850px;
+  width: 80%;
+  // height: 650px;
+  margin: 100px;
+  padding: 50px;
+  // border: 1px solid black;
+  opacity: 1;
+  // background-color: var(--light-middle);
+  /* box-shadow: 5px 5px 15px 5px rgb(112, 112, 112); */
+  // background-image: url("/Users/svenduve/github/dlc/books-768426_1920.jpg");
+  background-repeat: no-repeat;
+  // background-color: var(--light);
+  transition: opacity 2s;
+  
+}
+
+.contentBox{
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  /* grid-column-start: span 2; */
+  width: 80%;
+  height: 600px;
+  margin: 100px;
+  padding-top: 100px;
+  // border: 1px solid black;
+  // background-color: $light-middle;
+  /* box-shadow: 5px 5px 15px 5px rgb(112, 112, 112); */
+  transition: opacity 0.1s;
+}
+
+.adjustAdress {
+  flex-direction: row;
+}
+
+.subContentBox{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  // border: 1px solid black;
+}
+
+// .map{
+//   justify-self: center;
+// }
+
+.footer{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  // border: 1px solid black;
+  background-color: $dark-red;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+}
+
+.footer--menu {
+  display: flex;
+  flex-direction: row;
+  align-self: flex-end;
+  justify-content: space-evenly;
+}
+
+.footer--item {
+  font-family: $raleway;
+  font-size: small;
+  padding: 15px;
+}
+
+
+
+
+@media(max-width: 800px) {
+  
+  .headings {
+    font-size: $headsize;
+    font-family: $raleway;
+    color: $middle;
+    padding: 15px;
+  }
+  
+  
+  .headingsSmall {
+    font-size: 22px;
+  }
+  
+  .smaller {
+    font-size: 18px;
+  }
+  
+  .marginLeft {
+    margin-left: 25px;
+  }
+  
+  .moreLeft {
+    margin-left: 75px;
+  }
+  
+  .textForm {
+    font-size: $paSize;
+    font-family: $quicksan;
+    color: $middle;
+    padding: 15px;
+  }
+  
+  .paddingBottom {
+    padding-bottom: 100px;
+  }
+  
+  body {
+    background-color: $light;
+  }
+  
+  
+  
+  
+  // .header{
+  //   display: flex;
+  //   flex-direction: row;
+  //   // justify-content: flex-end;
+  //   border: 1px solid black;
+  //   background-color: $dark-red;
+  // }
+  .header{
+    display: grid;
+    grid-template-columns: 100%;
+    justify-content: center;
+    // border: 1px solid black;
+    background-color: $light;
+    color: $middle;
+    top: 0;
+    left: 0;
+    position: relative;
+  }
+  
+  
+  .menu {
+    display: grid;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+  }
+  
+  
+  #compName {
+    font-size: $headsize;
+    font-family: $raleway;
+    padding: 20px;
+    text-align: center;
+    align-content: center;
+    align-self: center;
+  
+  }
+  
+  .mainitem {
+    width: 150px;
+    // margin: 5px;
+    padding: 20px;
+    font-size: $headsize;
+    background-color: $light;
+    font-family: $raleway;
+    transition: {
+      property: background-color;
+      duration: 1s;
+    }
+  
+    &:hover {
+      background-color: $light-middle;
+      color: black;
+    }
+  
+  }
+  
+  
+  
+  
+  
+  .content{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: minmax(700px, auto);
+    justify-content: center;  /* zentriert im container entlang der achse */
+    align-self: center;
+    // border: 1px solid green;
+    /* display: flex;
+    flex-direction: column; */
+  }
+  
+  
+  
+  
+  .contentGreeting{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    // width: 850px;
+    width: 80%;
+    // height: 650px;
+    margin: 100px;
+    padding: 50px;
+    // border: 1px solid black;
+    opacity: 1;
+    // background-color: var(--light-middle);
+    /* box-shadow: 5px 5px 15px 5px rgb(112, 112, 112); */
+    // background-image: url("/Users/svenduve/github/dlc/books-768426_1920.jpg");
+    background-repeat: no-repeat;
+    // background-color: var(--light);
+    transition: opacity 2s;
+    
+  }
+  
+  .contentBox{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    /* grid-column-start: span 2; */
+    width: 95%;
+    height: auto;
+    margin: 100px;
+    padding-top: 100px;
+    // border: 1px solid black;
+    // background-color: $light-middle;
+    /* box-shadow: 5px 5px 15px 5px rgb(112, 112, 112); */
+    transition: opacity 0.1s;
+  }
+  
+  .adjustAdress {
+    flex-direction: column;
+  }
+  
+  .subContentBox{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    // border: 1px solid black;
+  }
+  
+  // .map{
+  //   justify-self: center;
+  // }
+  
+  .footer{
+    display: grid;
+    grid-template-columns: 100%;
+    // border: 1px solid black;
+    background-color: $dark-red;
+    bottom: 0;
+    position: sticky;
+    width: 100%;
+
+  }
+  
+  .footer--menu {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-self: center;
+    justify-content: space-evenly;
+  }
+  
+  .footer--item {
+    font-family: $raleway;
+    font-size: small;
+    padding: 1px;
+  }
+  
+  
+
+
+}
+
